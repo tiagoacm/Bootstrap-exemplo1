@@ -1,0 +1,52 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+body {
+	font-family: 'OpenSans';
+	color: #666;
+}
+#menu.navbar-default .navbar-brand {
+    color: rgba(119, 119, 119, 1);
+}
+#menu.navbar-default {
+    font-size: 14px;
+    background-color: rgba(248, 248, 248, 1);
+    border-bottom-width: 1px;
+}
+#menu.navbar-default .navbar-nav>li>a {
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#menu.navbar-default .navbar-nav>li>a:hover,
+#menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(51, 51, 51, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#menu.navbar-default .navbar-nav>.active>a,
+#menu.navbar-default .navbar-nav>.active>a:hover,
+#menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(85, 85, 85, 1);
+    background-color: rgba(231, 231, 231, 1);
+}
+#menu.navbar-default .navbar-toggle {
+    border-color: #ddd;
+}
+#menu.navbar-default .navbar-toggle:hover,
+#menu.navbar-default .navbar-toggle:focus {
+    background-color: #ddd;
+}
+#menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #888;
+}
+#menu.navbar-default .navbar-toggle:hover .icon-bar,
+#menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #888;
+}

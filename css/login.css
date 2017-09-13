@@ -1,0 +1,42 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+@font-face {
+	font-family: 'OpenSans-Light';
+	src: url("../fonts/Open_Sans/OpenSans-Light.ttf");
+	font-size: 1em;
+}
+
+body {
+	background-color: rgba(149, 165, 166,1.0);
+	font-family: 'OpenSans';
+	/*background: url("../img/login.jpg") no-repeat;*/
+
+}
+
+body h1 {
+	font-family: 'OpenSans';
+	font-size: 40px;
+	color: #666;
+	text-transform: uppercase;
+	text-align: left;
+
+}
+
+body small{
+	font-family: 'OpenSans-Light';
+	font-size: 20px;
+	color: #666;
+	text-transform: uppercase;
+	text-align: left;	
+	display: block;
+}
+
+
+#msgerro{
+	margin-left: 14px;
+    margin-right: 14px;	
+}
+
