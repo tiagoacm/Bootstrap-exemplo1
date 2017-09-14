@@ -50,3 +50,11 @@ body {
 #menu.navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #888;
 }
+
+#cabecalho {
+    margin-top: 80px;
+}
+
+#cabecalho h1{
+    font-size: 24px;
+}
