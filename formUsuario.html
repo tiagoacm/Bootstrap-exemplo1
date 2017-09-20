@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sistema</title>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/estilo.css">
+	</head>
+	<body>
+
+			<header >
+				<div id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+				    <div class="container-fluid">
+				        <div class="navbar-header">
+				        	<a class="navbar-brand" href="#">Nome do Sistema</a>
+				            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				            </button>
+				        </div>
+				        <div class="collapse navbar-collapse navbar-menubuilder">
+				            <ul class="nav navbar-nav navbar-right">
+				                <li><a href="#">Exemplo</a></li>
+				                <li><a href="#">Exemplo</a></li>
+				                <li><a href="#">Exemplo</a></li>
+				                <li><a href="listaUsuario.html">Usuários</a></li>
+				                <li><a href="login.html">Sair</a></li>
+				            </ul>
+				        </div>
+				    </div>
+				</div>
+		 	</header>
+ 		
+		 	<section>
+		 		
+			 	<div class="container">
+			 		<div id="cabecalho">
+			 			<div class="row">
+								<h1>Usuários</h1>		 					
+								<hr />
+						</div>
+			 		</div>	
+					
+			 	</div>
+
+			 	<div class="container">
+			 			<div class="row">
+
+					      	<!-- definição formulário -->
+					      	<form id="formulario" action="#" method="post" class="form-horizontal" >
+					        	
+					        	<!-- Mensagens de inconsistencias e processamento-->
+					        	<div class="row">
+					          		<div class="col-md-4">
+					          		</div> 
+					        		<div class="col-md-4">
+									<!-- Colocar tratamento para mostrar mensagem de sucesso ou erro -->
+										<div class="alert alert-success" role="alert">
+											<p><strong>OK!</strong> Cadastro efetuado com sucesso.</p>
+										</div>
+										<div class="alert alert-danger" role="alert">
+											<p><strong>Ops!</strong> Ocorreu algum erro durante o cadastro.</p>
+										</div>
+									</div>
+								</div>
+								
+					        	<!-- definição dos campos -->
+					        	<div class="row">
+					          		<div class="form-group">
+					          			<div class="col-md-4 ">
+						            		<label class="control-label pull-right" for="login">
+						            			Login
+						            		</label>  
+					          			</div>
+					              		
+					              		<div class="col-md-4">
+						                	<input id="login" name="login" type="text" placeholder="Digite o nome do usuário" 
+					    	            class="form-control input-md" autofocus>
+					    	            	<form:errors path="usuario.login" class="text-danger"/>
+					        	    	</div>     	    	
+
+					          		</div>
+
+					          		<div class="form-group">
+					          			<div class="col-md-4">
+					            			<label class="control-label pull-right" for="senha">
+					            				Senha
+					            			</label>  
+					            		</div>
+					              		
+					              		<div class="col-md-4">
+						                	<input id="senha" name="senha" type="password" placeholder="Digite uma senha" class="form-control input-md"/>
+					    	            	<form:errors path="usuario.senha" class="text-danger"/>
+					        	    	</div>
+
+					          		</div>
+					          		
+					        	</div>
+
+						        <hr />
+						        
+					    	    <!-- definição do botões -->
+					        	<div id="actions" class="row">
+					          		<div class="col-md-4">
+					          		</div> 
+					          		
+					          		<div class="col-md-4 ">
+					            		<a href="listaUsuario.html" class="btn btn-default">Cancelar</a>
+					            		<button type="submit" class="btn btn-primary">Cadastrar</button>
+					          		</div> 
+					        	</div>
+
+					      </form>
+
+			 			</div>
+			 	</div>
+
+		 	</section>
+
+		 	<footer>
+		 		<div class="row"></div>
+  			</footer>	
+
+
+
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<script src="lib/jquery/jquery.validate.min.js"></script>
+		<script src="js/efeitos.js"></script>
+	
+	</body>
+</html>
