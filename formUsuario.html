@@ -45,7 +45,8 @@
 			 			<div class="row">
 
 					      	<!-- definição formulário -->
-					      	<form id="formulario" action="#" method="post" class="form-horizontal" >
+					      	<!-- data-toggle="validator" usando para ativar validação usando js do bootstrap-->
+					      	<form id="formulario" data-toggle="validator" action="#" method="post" class="form-horizontal" role="form">
 					        	
 					        	<!-- Mensagens de inconsistencias e processamento-->
 					        	<div class="row">
@@ -72,9 +73,9 @@
 					          			</div>
 					              		
 					              		<div class="col-md-4">
-						                	<input id="login" name="login" type="text" placeholder="Digite o nome do usuário" 
-					    	            class="form-control input-md" autofocus>
-					    	            	<form:errors path="usuario.login" class="text-danger"/>
+						                	<input id="login" maxlength="10" class="form-control input-md" placeholder="Digite o nome do usuário" type="text"
+						                	required autofocus>
+					    	            	<div class="help-block with-errors"></div>
 					        	    	</div>     	    	
 
 					          		</div>
@@ -87,8 +88,10 @@
 					            		</div>
 					              		
 					              		<div class="col-md-4">
-						                	<input id="senha" name="senha" type="password" placeholder="Digite uma senha" class="form-control input-md"/>
-					    	            	<form:errors path="usuario.senha" class="text-danger"/>
+						                	<input id="senha" maxlength="8" class="form-control input-md" placeholder="Digite uma senha" type="password" 
+						                	data-minlength="6" data-maxlength="8" required 
+						                	data-error="Você deve informar senha minimo de 6 e máximo 8 digitos.">
+					    	            	<div class="help-block with-errors"> Informar senha minimo de 6 dígitos</div>
 					        	    	</div>
 
 					          		</div>
@@ -119,11 +122,9 @@
 		 		<div class="row"></div>
   			</footer>	
 
-
-
 		<script src="lib/jquery/jquery.min.js"></script>
 		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-		<script src="lib/jquery/jquery.validate.min.js"></script>
+		<script src="lib/bootstrap/js/validator.min.js"></script>
 		<script src="js/efeitos.js"></script>
 	
 	</body>
