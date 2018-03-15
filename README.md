@@ -10,7 +10,7 @@ jQuery v1.11.3
 A ideia desse site é ser um modelo para prototipar ou utilizar como base no desenvolvimento do seu software.
 
 
-
+Boa sorte!
 
 
 
